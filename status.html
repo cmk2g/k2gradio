@@ -1,0 +1,18 @@
+<html>
+   <head>
+      <title>My Radio Station</title>
+   </head>
+   <body>
+
+      <h1 data-shoutcast-value="servertitle"></h1>
+
+      <p>Now Playing: <span data-shoutcast-value="songtitle"></span></p>
+      <p>Listeners: <span data-shoutcast-value="currentlisteners"></span>/<span data-shoutcast-value="maxlisteners"></span></p>
+
+      <h2>You just missed</h2>
+      <ul id="played"></ul>
+      
+      <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><\/script>')</script>
+      <script src="jquery.shoutcast.easy.min.js?host=example.com&port=8000"></script>
+    </body>
+</html>
